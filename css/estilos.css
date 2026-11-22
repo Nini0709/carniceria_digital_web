@@ -1,0 +1,106 @@
+:root {
+  --color-principal: #8b0000; /* Rojo Carmesí */
+  --color-secundario: #600000;
+  --color-acento: #ffc107;
+  --color-fondo: #f8f9fa;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar */
+.navbar-carniceria {
+  background-color: var(--color-principal) !important;
+}
+
+/* Carrusel */
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.custom-caption {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 20px;
+  bottom: 30px;
+}
+
+/* Propuesta de valor */
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(139, 0, 0, 0.1);
+  color: var(--color-principal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin: 0 auto 15px auto;
+}
+
+/* Tarjetas de Producto */
+.card-product {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+.card-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img-wrapper img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.badge-promo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+}
+
+.badge-vacuum {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #198754;
+  color: white;
+  font-size: 0.75rem;
+}
+
+/* Botón flotante de WhatsApp */
+.btn-whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn-whatsapp-float:hover {
+  background-color: #20ba5a;
+  color: white;
+}
